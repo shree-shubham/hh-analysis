@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
 import argparse
-from collections import defaultdict
+from collections import Counter,defaultdict
+import datetime
 from github import Github
+from jinja2 import Environment,FileSystemLoader
 import urllib.request
 import os
 import re
@@ -78,10 +80,27 @@ def get_data(gh,url,websites_data,github_data):
     print("+ Archived {} websites and {} GitHub profiles.".format(
         len(data[websites_key]),len(data[github_key])))
 
+def analyze(github_data):
+    data = []
+    with open(github_data,"r") as f:
+        headers = f.readline().strip().split("\t")
+        for line in f.readlines():
+            line=line.strip()
+            data.append(dict(zip(headers,line.split("\t"))))
+
+    analysis = {'github_count': len(data)}
+    location_data = [x['location'] for x in data if 'location' in x]
+    analysis["top_locations"] = Counter(location_data).most_common()
+
+    first_names = [x['name'].split(" ")[0] for x in data if 'name' in x]
+    analysis["top_first_names"] = Counter(first_names).most_common()
+
+    return analysis
+
 if __name__=='__main__':
     url='https://raw.githubusercontent.com/HackathonHackers/hh-personal-sites/master/README.md'
-    websites_data = "websites.tsv"
-    github_data = "github.tsv"
+    websites_data = "data/websites.tsv"
+    github_data = "data/github.tsv"
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--get_data',action='store_true')
@@ -97,3 +116,12 @@ if __name__=='__main__':
         p = Popen(["./plot.r"])
         p.communicate()
     if args.generate_readme:
+        env = Environment(loader=FileSystemLoader("."))
+
+        analysis = analyze(github_data)
+
+        with open("README.md","w") as f:
+            f.write(env.get_template("README.jinja.md").render(
+                date=datetime.date.today().strftime("%B %d, %Y"),
+                analysis=analysis
+            ))
