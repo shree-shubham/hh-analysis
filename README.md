@@ -3,6 +3,8 @@
 This repository generates TSV and a simple analysis of the
 GitHub user data from
 [HackathonHackers/hh-personal-sites](https://github.com/HackathonHackers/hh-personal-sites).
+Add your data there to be included in this repo,
+and file an issue or email me to be excluded from this repo.
 
 The README is parsed with Python and the coordinates for the map
 are obtained by searching for a user's GitHub location string
@@ -33,25 +35,25 @@ by intelligently parsing locations.
   + San Francisco, CA: 8
   + Cambridge, MA: 6
   + New York: 6
-  + Boston, MA: 5
   + California: 5
-  + New York, NY: 5
+  + Boston, MA: 5
   + New York City: 5
-  + Palo Alto, CA: 4
+  + New York, NY: 5
+  + Pittsburgh, PA: 4
 
 ## Top First Names
 
 
   + David: 7
-  + Max: 6
   + Ryan: 6
+  + Max: 6
   + Ben: 6
   + Andrew: 6
-  + Kyle: 5
   + Rohan: 5
-  + Alex: 4
-  + Joe: 4
-  + Jonathan: 4
+  + Kyle: 5
+  + Justin: 4
+  + Matthew: 4
+  + Richard: 4
 
 # Instructions for running in Linux
 
