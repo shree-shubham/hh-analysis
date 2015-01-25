@@ -1,4 +1,4 @@
-# HH Github Analysis
+# HH Analysis
 
 This repository generates TSV and a simple analysis of the
 GitHub user data from
@@ -11,7 +11,7 @@ are obtained by searching for a user's GitHub location string
 in Wikipedia.
 
 The following information was generated on January 25, 2015
-from 554 GitHub pages.
+from 554 GitHub users.
 
 # World Map
 The following world map with binned locations is generated with
@@ -35,25 +35,25 @@ by intelligently parsing locations.
   + San Francisco, CA: 8
   + Cambridge, MA: 6
   + New York: 6
-  + California: 5
   + Boston, MA: 5
-  + New York City: 5
+  + California: 5
   + New York, NY: 5
-  + Pittsburgh, PA: 4
+  + New York City: 5
+  + New Jersey: 4
 
 ## Top First Names
 
 
   + David: 7
-  + Ryan: 6
   + Max: 6
-  + Ben: 6
   + Andrew: 6
+  + Ben: 6
+  + Ryan: 6
   + Rohan: 5
   + Kyle: 5
-  + Justin: 4
+  + Ian: 4
+  + Jonathan: 4
   + Matthew: 4
-  + Richard: 4
 
 # Instructions for running in Linux
 
