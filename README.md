@@ -13,6 +13,12 @@ in Wikipedia.
 The following information was generated on January 25, 2015
 from 554 GitHub users.
 
+# Structured Data
+Raw TSV data from `hh-personal-sites` is available in
+[data/github.tsv](https://github.com/bamos/hh-analysis/blob/master/data/github.tsv)
+and
+[data/websites.tsv](https://github.com/bamos/hh-analysis/blob/master/data/websites.tsv).
+
 # World Map
 The following world map with binned locations is generated with
 Following is a binned heatmap of locations, generated with
@@ -35,25 +41,25 @@ by intelligently parsing locations.
   + San Francisco, CA: 8
   + Cambridge, MA: 6
   + New York: 6
-  + Boston, MA: 5
-  + California: 5
-  + New York, NY: 5
   + New York City: 5
+  + California: 5
+  + Boston, MA: 5
+  + New York, NY: 5
   + New Jersey: 4
 
 ## Top First Names
 
 
   + David: 7
-  + Max: 6
-  + Andrew: 6
   + Ben: 6
+  + Max: 6
   + Ryan: 6
-  + Rohan: 5
+  + Andrew: 6
   + Kyle: 5
-  + Ian: 4
-  + Jonathan: 4
+  + Rohan: 5
   + Matthew: 4
+  + Ian: 4
+  + Alex: 4
 
 # Instructions for running in Linux
 

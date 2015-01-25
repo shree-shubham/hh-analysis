@@ -13,6 +13,12 @@ in Wikipedia.
 The following information was generated on {{ date }}
 from {{ analysis["github_count"] }} GitHub users.
 
+# Structured Data
+Raw TSV data from `hh-personal-sites` is available in
+[data/github.tsv](https://github.com/bamos/hh-analysis/blob/master/data/github.tsv)
+and
+[data/websites.tsv](https://github.com/bamos/hh-analysis/blob/master/data/websites.tsv).
+
 # World Map
 The following world map with binned locations is generated with
 Following is a binned heatmap of locations, generated with
