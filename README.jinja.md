@@ -1,4 +1,4 @@
-# HH Github Analysis
+# HH Analysis
 
 This repository generates TSV and a simple analysis of the
 GitHub user data from
@@ -11,7 +11,7 @@ are obtained by searching for a user's GitHub location string
 in Wikipedia.
 
 The following information was generated on {{ date }}
-from {{ analysis["github_count"] }} GitHub pages.
+from {{ analysis["github_count"] }} GitHub users.
 
 # World Map
 The following world map with binned locations is generated with
