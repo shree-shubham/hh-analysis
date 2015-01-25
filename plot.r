@@ -14,5 +14,5 @@ mp <- ggplot() +
   theme(legend.position="bottom",
         axis.text.y=element_blank(),
         axis.text.x=element_blank())
-ggsave("plots/map.png",width=8,height=7)
-ggsave("plots/map.pdf",width=8,height=7)
+ggsave("plots/map.png",width=9,height=7)
+ggsave("plots/map.pdf",width=9,height=7)
