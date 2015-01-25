@@ -45,7 +45,7 @@ by intelligently parsing locations.
   + {{ name }}: {{ freq }}
 {%- endfor %}
 
-# Instructions for running in Linux
+# Instructions for running (Linux)
 
 + Install Python 3 with packages `PyGithub`, `jinja2`, and `wikipedia`.
 + Install R with packages `ggplot2` and `ggmap`.

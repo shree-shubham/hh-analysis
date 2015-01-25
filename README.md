@@ -39,29 +39,29 @@ by intelligently parsing locations.
   + United States: 46
   + Canada: 10
   + San Francisco, CA: 8
-  + Cambridge, MA: 6
   + New York: 6
+  + Cambridge, MA: 6
+  + New York, NY: 5
   + New York City: 5
   + California: 5
   + Boston, MA: 5
-  + New York, NY: 5
   + New Jersey: 4
 
 ## Top First Names
 
 
   + David: 7
-  + Ben: 6
-  + Max: 6
-  + Ryan: 6
   + Andrew: 6
-  + Kyle: 5
+  + Ryan: 6
+  + Max: 6
+  + Ben: 6
   + Rohan: 5
-  + Matthew: 4
-  + Ian: 4
-  + Alex: 4
+  + Kyle: 5
+  + Jonathan: 4
+  + Kevin: 4
+  + Richard: 4
 
-# Instructions for running in Linux
+# Instructions for running (Linux)
 
 + Install Python 3 with packages `PyGithub`, `jinja2`, and `wikipedia`.
 + Install R with packages `ggplot2` and `ggmap`.
